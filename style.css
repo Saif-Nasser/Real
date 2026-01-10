@@ -856,7 +856,7 @@ body.menu-active .floating-widgets {
 }
 
 .splash-logo {
-    width: 100px;
+    width: 170px;
     /* Smaller to fit in ring */
     height: auto;
     position: relative;
@@ -958,4 +958,5 @@ body.menu-active .floating-widgets {
 .splash-logo img {
     width: 100%;
     display: block;
+
 }
