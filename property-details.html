@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Details | Dark Pearl Real Estate</title>
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Serif+Display:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="property-details.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Dark Pearl Logo">
+                </a>
+            </div>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="has-dropdown">
+                        <a href="properties.html" class="active">Properties</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="properties.html?type=Villas">Villas</a></li>
+                            <li><a href="properties.html?type=Apartments">Apartments</a></li>
+                            <li><a href="properties.html?type=Townhouses">Townhouses</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="developers.html">Developers</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="agents.html">Our Agents</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Property Hero -->
+    <section class="property-hero" id="property-hero">
+        <div class="hero-overlay"></div>
+        <div class="container property-hero-content animate-on-scroll scale-in">
+            <p class="hero-subtitle"><span id="prop-developer">Developer</span>, Off-Plan</p>
+            <h1 id="prop-title">Property Title</h1>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar-container container animate-on-scroll fade-in-up">
+        <div class="overview-label">OVERVIEW</div>
+        <div class="stats-bar">
+            <div class="stat-item">
+                <i class="fas fa-tag"></i>
+                <div class="stat-info">
+                    <span class="stat-value" id="stat-price">0 M AED</span>
+                    <span class="stat-label">Starting Price</span>
+                </div>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-calendar-alt"></i>
+                <div class="stat-info">
+                    <span class="stat-value" id="stat-plan">00/00</span>
+                    <span class="stat-label">Payment Plan</span>
+                </div>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-key"></i>
+                <div class="stat-info">
+                    <span class="stat-value" id="stat-handover">Q0 0000</span>
+                    <span class="stat-label" id="label-handover">Handover</span>
+                </div>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-percent"></i>
+                <div class="stat-info">
+                    <span class="stat-value" id="stat-commission">0% Commission</span>
+                    <span class="stat-label">Direct Sales</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <section class="property-overview-section">
+        <div class="container overview-grid">
+            <!-- Left Content -->
+            <div class="overview-content animate-on-scroll slide-in-left">
+                <h2>Over View</h2>
+
+                <div class="overview-list">
+                    <div class="overview-item">
+                        <span class="label">Developer</span>
+                        <span class="value" id="detail-developer">Developer Name</span>
+                    </div>
+                    <div class="overview-item">
+                        <span class="label">Unit Type</span>
+                        <span class="value" id="detail-bedrooms">0 Bedroom</span>
+                    </div>
+                    <div class="overview-item">
+                        <span class="label">Location</span>
+                        <span class="value" id="detail-location">Location Name</span>
+                    </div>
+                    <div class="overview-item highlight-item">
+                        <span class="label">Starting Price</span>
+                        <span class="value" id="detail-price">000000</span>
+                    </div>
+                    <div class="overview-item">
+                        <span class="label">Property Type</span>
+                        <span class="value" id="detail-type">Type</span>
+                    </div>
+                    <div class="overview-item">
+                        <span class="label">Size By sqft</span>
+                        <span class="value" id="detail-size">0 - 0 sqft</span>
+                    </div>
+                </div>
+
+                <div class="property-description" id="prop-description">
+                    <p>Description loading...</p>
+                </div>
+
+                <a href="#" class="btn-download">
+                    <i class="fas fa-file-pdf"></i>
+                    DOWNLOAD FREE PDF BROCHURE
+                </a>
+            </div>
+
+            <!-- Right Image -->
+            <div class="overview-image animate-on-scroll slide-in-right">
+                <img id="feat-image" src="assets/images/logo.png" alt="Property Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll Top Button -->
+    <button class="scroll-top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </button>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="container text-center">
+                <img src="assets/images/logo.png" alt="Dark Pearl" class="footer-logo-large">
+                <p class="footer-mission">At Dark Pearl, we're dedicated to quickly delivering your best choice. Our
+                    commitment goes beyond fast results, ensuring your investment is both efficient and beneficial. In a
+                    world of ordinary opportunities, we're here to offer you the extraordinary.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-main">
+            <div class="container footer-grid">
+                <!-- Col 1 -->
+                <div class="footer-col">
+                    <h5>GET IN TOUCH</h5>
+                    <div class="contact-details">
+                        <p>306, 307, 308, 3rd Floor,<br>Bldg. 8, Bay Square,<br>Business Bay, Dubai, U.A.E</p>
+                        <div class="contact-row">
+                            <span class="contact-icon"><i class="fas fa-phone-alt"></i></span>
+                            <span>+971 4 565 1717</span>
+                        </div>
+                        <div class="contact-row">
+                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                            <span>Hello@DarkPearl.ae</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Col 2 -->
+                <div class="footer-col">
+                    <h5>USEFUL LINKS</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="properties.html">Properties</a></li>
+                        <li><a href="developers.html">Developers</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="agents.html">Our Agents</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div class="footer-col">
+                    <h5>DEVELOPERS</h5>
+                    <ul class="footer-links">
+                        <li><a href="properties.html?developer=Emaar">Emaar Properties</a></li>
+                        <li><a href="properties.html?developer=DAMAC">Damac Properties</a></li>
+                        <li><a href="properties.html?developer=Sobha Realty">Sobha Realty</a></li>
+                        <li><a href="properties.html?developer=Select Group">Select Group</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 -->
+                <div class="footer-col">
+                    <h5>PROJECT TYPE</h5>
+                    <ul class="footer-links">
+                        <li><a href="properties.html?type=Villas">Villas</a></li>
+                        <li><a href="properties.html?type=Apartments">Apartments</a></li>
+                        <li><a href="properties.html?type=Townhouses">Townhouses</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 – Dark Pearl. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/projects-data.js"></script>
+    <script src="animations.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const propertyId = urlParams.get('id');
+
+            if (!propertyId || typeof projectsData === 'undefined') return;
+
+            // Find project
+            const project = projectsData.find(p => p.id === propertyId);
+
+            if (project) {
+                // Determine image path
+                const imgPath = `assets/images/projects/${project.originalIndex}.png`;
+
+                // Set Hero Background
+                const heroSection = document.getElementById('property-hero');
+                heroSection.style.backgroundImage = `url('${imgPath}')`;
+
+                // Set Text Content
+                document.getElementById('prop-title').textContent = project.title;
+                document.getElementById('prop-developer').textContent = project.developer;
+
+                // Stats
+                document.getElementById('stat-price').textContent = project.price;
+                document.getElementById('stat-plan').textContent = project.paymentPlan;
+                document.getElementById('stat-handover').textContent = project.handover;
+                document.getElementById('label-handover').textContent = project.handoverLabel || "Handover";
+                document.getElementById('stat-commission').textContent = project.commission;
+
+                // Details List
+                document.getElementById('detail-developer').textContent = project.developer;
+                document.getElementById('detail-bedrooms').textContent = project.bedrooms;
+                document.getElementById('detail-location').textContent = project.location;
+                document.getElementById('detail-price').textContent = project.price.replace(' AED', '');
+                document.getElementById('detail-type').textContent = project.type;
+                document.getElementById('detail-size').textContent = project.area;
+
+                // Description & Image
+                document.getElementById('prop-description').innerHTML = project.description;
+                document.getElementById('feat-image').src = imgPath;
+                document.title = `${project.title} | Dark Pearl Real Estate`;
+            } else {
+                document.querySelector('.property-overview-section').innerHTML = '<div class="container"><p>Property not found.</p></div>';
+            }
+        });
+    </script>
+</body>
+
+</html>
